@@ -7,8 +7,8 @@ const Preloader = () => {
     <mesh>
     <Html position={[-1,0.5,0]}>
       <div style={{display:"flex"}}>
-      <div style={{ backgroundColor: 'transparent',color:"white",fontSize:"100px",fontFamily:"emoji",marginRight: "-18%"}}>
-        ATMOS
+      <div style={{ backgroundColor: 'transparent',color:"white",fontSize:"100px",fontFamily:"emoji",marginRight: "-18%",width:"max-content"}}>
+        CHAIR 3D
       </div>
 
         <img src={logo} style={{marginTop:"10%",

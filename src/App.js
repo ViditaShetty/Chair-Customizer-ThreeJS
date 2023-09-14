@@ -30,7 +30,7 @@ function App() {
                  onMouseOver={()=>setHover(true)}
                  onMouseOut={()=>setHover(false)}
                    >
-              <div >Explore me</div>
+              <div >Customize</div>
          </button>
          </Html>
        </>
@@ -38,14 +38,80 @@ function App() {
       
           <>
           <color attach="background" args={["blue"]} />
-          <ScrollControls pages={5} damping={0.3} style={{width:"94.5%",height:"92%",top: "26px"}}> {/**you can listen and react to scrolling page using this */}
+          <ScrollControls pages={2} damping={0.3} style={{width:"94.5%",height:"92%",top: "26px"}}> {/**you can listen and react to scrolling page using this */}
           <Experience/>
 
           <Scroll html position={[-0.8,2,0]}>
-          <h1 className="text1" style={{top:'15vh',left:'37vw',transition:'all 0.1s ease'}}>Scroll to begin journey</h1>
+         
+          <h3 className="text3" style={{top:'15vh',left:'10vw'}}>
+            <div style={{marginLeft:"-56%",marginBottom:"-7%"}}>CUSHION COLOR </div><br/>
+            <div style={{display:'flex'}}>
+              <div className='colors'>
+                <div className="colorrr"> </div>
+                <span style={{margin:"10px"}}>Red</span>
+                
+              </div>
+              
+              <div className='colors'>
+                <div className="colorrr green"></div>
+                <span style={{margin:"10px"}}>Green</span>
+              </div>
+
+              <div className='colors'>
+                <div className="colorrr blue"> </div>
+                 <span style={{margin:"10px"}}>Blue</span>
+              </div>
+              </div>
+          </h3>
+
+          <h3 className="text3" style={{top:'35vh',left:'10vw'}}>
+            <div style={{marginLeft:"-72%",marginBottom:"-7%"}}>SOFT SHELL </div><br/>
+            <div style={{display:'flex'}}>
+              <div className='colors'>
+                <div className="colorrr red"> </div>
+                <span style={{margin:"10px"}}>Maroon</span>
+                
+              </div>
+              
+              <div className='colors'>
+                <div className="colorrr green"></div>
+                <span style={{margin:"10px"}}>Pastel</span>
+              </div>
+
+              <div className='colors'>
+                <div className="colorrr blue"> </div>
+                 <span style={{margin:"10px"}}>Ocean</span>
+              </div>
+              </div>
+          </h3>
+
+
+          <h3 className="text3" style={{top:'55vh',left:'10vw',transition:'all 0.1s ease'}}>
+            <div style={{marginLeft:"-56%",marginBottom:"-7%"}}>STAND COLOR</div><br/>
+            <div style={{display:'flex'}}>
+              <div className='colors'>
+                <div className="colorrr"> </div>
+                <span style={{margin:"10px"}}>Red</span>
+                
+              </div>
+              
+              <div className='colors'>
+                <div className="colorrr green"></div>
+                <span style={{margin:"10px"}}>Matcha</span>
+              </div>
+
+              <div className='colors'>
+                <div className="colorrr blue"> </div>
+                 <span style={{margin:"10px"}}>Sky</span>
+              </div>
+              </div>
+          </h3>
+
+          
+          
+
+          
           <h1 className="text2" style={{top:'100vh',left:'10vw'}}>Info 1</h1>
-          <h1 className="text3" style={{top:'200vh',left:'74vw'}}>Info 2</h1>
-          <h1 className="text3" style={{top:'300vh',left:'10vw'}}>Info 3</h1>
           </Scroll>
 
           </ScrollControls>
