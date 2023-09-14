@@ -85,9 +85,9 @@ export const Experience = () => {
      <Stars radius={10} depth={70} count={800} factor={4} saturation={10} fade speed={4} />
 
      <pointLight position={[0,0,0]} intensity={1}/>
-      <pointLight position= {[-10, 10, -3]}  intensity={50} color={'orange'}/>
-      <pointLight position= {[2.5, -0.5, -2]}  intensity={50} color={'orange'} />
-      <pointLight position= {[0, -2.5,-0.5]}  intensity={50} color={'red'}/>
+      <pointLight position= {[-10, 10, -3]}  intensity={20} color={'orange'}/>
+      <pointLight position= {[2.5, -0.5, -2]}  intensity={20} color={'orange'} />
+      <pointLight position= {[0, -2.5,-0.5]}  intensity={20} color={'red'}/>
       <pointLight position= {[0, -4.5,-0.5]}  intensity={500} color={'red'}/>
       <pointLight position= {[3, 4, -5]} intensity={100} color={'orange'}/>
 
