@@ -38,7 +38,7 @@ function App() {
       
           <>
           <color attach="background" args={["blue"]} />
-          <ScrollControls pages={2} damping={0.3} style={{width:"94.5%",height:"92%",top: "26px"}}> {/**you can listen and react to scrolling page using this */}
+          <ScrollControls pages={1} damping={0.3} style={{width:"94.5%",height:"92%",top: "26px"}}> {/**you can listen and react to scrolling page using this */}
           <Experience/>
 
           <Scroll html position={[-0.8,2,0]}>

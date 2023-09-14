@@ -19,10 +19,10 @@ export const Background = () => {
           side={THREE.BackSide}
         >
           <Gradient
-            colorA={"black"}
-            colorB={"#AB47BC"}
+            colorA={"#BA68C8"}
+            colorB={"#f19eff"}
             axes={"y"}
-            start={0.8}
+            start={0.6}
             end={-1.5}
           />
         </LayerMaterial>

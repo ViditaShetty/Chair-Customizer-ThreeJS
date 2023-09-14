@@ -16,7 +16,11 @@ code {
   background: linear-gradient(45deg, #6cc4d7, #9e4cd0);
   
 
-  background: linear-gradient(360deg, #000000, #AB47BC);}
+  background: linear-gradient(360deg, #000000, #AB47BC);
+
+  background: linear-gradient(0.6turn,#BA68C8,#f19eff);
+
+}
 #root>div{
   height: 100vh;
 }
