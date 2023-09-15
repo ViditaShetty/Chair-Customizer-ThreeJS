@@ -19,7 +19,7 @@
     font-family: emoji;
 }
 .text3{
-    color: #d6d6d6;
+    color: #4e4c4c;
     overflow: hidden;
 
     position: fixed;
@@ -44,7 +44,7 @@
     align-content: center;
     align-items: center;
     border-radius: 33px;
-    border: 1.5px solid #f4efef29;
+    border: 1.5px solid #aaaaaa77;
     padding: 0px 16px 0px 9px;
     margin: 10px;
     width: 50px;
@@ -52,7 +52,6 @@
     height: 30px;
     font-weight:100;
     cursor: pointer;
-
 }
 
 .colors:hover{

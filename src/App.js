@@ -25,7 +25,7 @@ function App() {
         load?
        <><Preloader/>
          <Html position={[-0.6,0,0]}>  
-         <button style={{fontSize:"25px",fontFamily:"emoji",width: "max-content",border: "none",padding: "11px 30px",cursor:"pointer"}}
+         <button style={{fontSize:"25px",fontFamily:"emoji",width: "max-content",padding: "11px 30px",cursor:"pointer"}}
                  onClick={()=>setLoad(false)}               
                  onMouseOver={()=>setHover(true)}
                  onMouseOut={()=>setHover(false)}
@@ -111,7 +111,7 @@ function App() {
           
 
           
-          <h1 className="text2" style={{top:'100vh',left:'10vw'}}>Info 1</h1>
+         {/* <h1 className="text2" style={{top:'100vh',left:'10vw'}}>Info 1</h1>*/}
           </Scroll>
 
           </ScrollControls>

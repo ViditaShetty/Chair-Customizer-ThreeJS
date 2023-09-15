@@ -15,16 +15,14 @@ export const Background = () => {
         <LayerMaterial
           color={"#ffffff"}
           lighting="physical"
-          transmission={1}
+          transmission={50}
           side={THREE.BackSide}
         >
-          <Gradient
-            colorA={"#66BB6A"}
-            colorB={"#C5E1A5"}
+          {/*<Gradient
+            colorA={"#6cc4d7"}
+            colorB={"#9e4cd0"}
             axes={"y"}
-            start={0.6}
-            end={-1.5}
-          />
+  />*/}
         </LayerMaterial>
       </Sphere>
     </>

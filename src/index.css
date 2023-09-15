@@ -27,14 +27,13 @@ code {
 
 
 #root ::-webkit-scrollbar {
-  width: 0.3rem;
+  width: 0rem;
   border-radius: 0.5rem;
   background-color: hsla(30, 100%, 99%, 0.604);
-  margin-right:10%;
   
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 0.3rem;
+  border-radius: 0rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
 }
@@ -44,13 +43,13 @@ button{
   color: #AB47BC;
   transition: all 0.6s ease;
   border-radius: 41px;
-
+border: 0px;
 }
 button:hover{
   background-color:  #AB47BC;
   color:white;
-  overflow: hidden;
   transition: all 0.3s ease;
+  border:3px dotted white;
 }
 
 

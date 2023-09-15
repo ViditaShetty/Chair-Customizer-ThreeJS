@@ -7,112 +7,64 @@ import { useLoader } from '@react-three/fiber';
 
 
 import React from "react";
-import {pointLight} from '@react-three/drei';
+import {OrbitControls, PivotControls, Sphere, pointLight} from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
+import { BufferGeometry, MeshStandardMaterial } from 'three';
 
 export function Chair({ opacity, ...props }) {
 
   
   const helix = useRef();
   useFrame((_state, delta) => {
-    helix.current.rotation.y += delta * 0.5;
+     helix.current.rotation.z += delta * 0;
   });
 
 
-  const obj = useLoader(OBJLoader, './models/cloud/chair.obj')
+  const obj = useLoader(OBJLoader, './models/cloud/chair (2).obj')
   console.log(obj)
+
+
+
   return (
     <group {...props} dispose={null} ref={helix}>
-       <mesh
+      <Sphere color={'yellow'}/>
+      <PivotControls  
+        lineWidth={4}
+        activeAxes={[true, true, false]}
+        rotation={[0,0,0]}
+        offset={[0,0,0]}
+        anchor={[0,1,0]}
+        scale={15.4}
+        >
+        <mesh
         // rotation={[1, 0, 1]}
         receiveShadow
         geometry={obj.children[0].geometry}
         material={obj.children[0].material}
       >
-        <meshStandardMaterial
-        opacity={0.2}
-        color={"black"}
-        intensity={10}
-       />
+        <meshStandardMaterial  color={'black'} roughness={20} reflectivity={1} refractionRatio= {0.98} shininess={30} />
       </mesh>
 
 
+
       <mesh
-        // rotation={[1, 0, 1]}
         receiveShadow
         geometry={obj.children[1].geometry}
         material={obj.children[1].material}
         >
-        <meshStandardMaterial
-        {...obj.children[0].material["lambert2SG.001"]}
-        transparent
-        opacity={1}
-        color={"orange"}
-        intensity={10}
-       />
-      </mesh>
+           <meshStandardMaterial  color={'brown'} roughness={0} />
+        </mesh>
       
       <mesh
-        // rotation={[1, 0, 1]}
         receiveShadow
-        geometry={obj.children[3].geometry}
-        material={obj.children[3].material}
+        geometry={obj.children[2].geometry}
+        material={obj.children[2].material}
         >
-        <meshStandardMaterial
-        {...obj.children[0].material["lambert2SG.001"]}
-        transparent
-        opacity={1}
-        color={"black"}
-        intensity={100}
-       />
+         <meshStandardMaterial  color={'brown'} roughness={0}  />
       </mesh>
 
-
-      <mesh
-        receiveShadow
-        geometry={obj.children[4].geometry}
-        material={obj.children[4].material}
-      >
-        <meshStandardMaterial
-        {...obj.children[0].material["lambert2SG.001"]}
-        transparent
-        opacity={1}
-        color={"green"}
-        intensity={100}
-       />
-      </mesh>
-
-
-      <mesh
-        receiveShadow
-        geometry={obj.children[5].geometry}
-        material={obj.children[5].material}
-        >
-        <meshStandardMaterial
-        {...obj.children[0].material["lambert2SG.001"]}
-        transparent
-        opacity={1}
-        color={"red"}
-        intensity={100}
-       />
-      </mesh>
-
-
-      <mesh
-        receiveShadow
-        geometry={obj.children[7].geometry}
-        material={obj.children[7].material}
-        >
-        <meshStandardMaterial
-        {...obj.children[0].material["lambert2SG.001"]}
-        transparent
-        opacity={1}
-        color={"black"}
-        intensity={100}
-       />
-      </mesh>
-
+</PivotControls>
       
     </group>
   );
